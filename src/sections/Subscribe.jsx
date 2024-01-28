@@ -1,9 +1,24 @@
-import React from 'react'
+import React from 'react';
+import Button from '../components/Button';
 
 const Subscribe = () => {
   return (
-    <div>Subscribe</div>
-  )
-}
+    <section id='contact-us' className="max-container flex flex-col lg:flex-row justify-between items-center gap-10 ">
+      <h3 className='text-4xl leading-[68px] lg:max-w-screen-lg font-palanquin font-bold'>Sign Up from
+        <span className='text-coral-red'>Updates</span> & Newsletter
+      </h3>
 
-export default Subscribe
+      <div  className='lg:max-w-[40%] w-full flex items-center max-sm:flex-col gap-5 p-2.5 sm:border sm:border-slate-gray rounded-full'>
+        <input type="text" placeholder='subcribe@nike.com' className='input' />
+
+
+        <div className='flex max-sm:justify-center items-center max-sm:w-full'>
+          <Button label={"Sign Up"} />
+        </div>
+      </div>
+
+    </section>
+  );
+};
+
+export default Subscribe;
